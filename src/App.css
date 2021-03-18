@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+}
+
+
+/*****************************  Cards from Bootstrap  *******************************/
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /**************************************** Responsive columns *******************************************/
+  @media screen and (min-width:199px) and (max-width:400px){
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .superposition {
+      margin-left: 2rem;
+      position: absolute;
+      top: 100px;
+      right: 250px;
+    }
+  }
+  @media screen  and (min-width:401px) and (max-width:600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .superposition {
+      margin-left: 2rem;
+      top: -55px;
+      right: 50px;
+    }
+  }
+  @media screen and (min-width:601px) and (max-width:899px){
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .superposition {
+      position: absolute;
+      top: -30px;
+      right: 140px;
+    }
+  }
+  @media screen and (min-width:900px) and (max-width:999px){
+    .column {
+      width: 33%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .superposition {
+      position: absolute;
+      top: 25px;
+      right: 335px;
+    }
+  }
+  @media screen and (min-width:1000px)and (max-width:1200px){
+    .column {
+      width: 25%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .superposition {
+      position: absolute;
+      top: 25px;
+      right: 355px;
+    }
+  }
+  @media screen and (min-width:1201px)and (max-width:1500px){
+    .column {
+      width: 25%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .superposition {
+      position: absolute;
+      top: 65px;
+      right: 455px;
+    }
+  }
+  
+  /*********************** Style the cards *****************************/
+  .card {
+    box-shadow: 0 2px 2px 0 rgba(119, 119, 119, 0.2);
+    text-align: center;
+    background-color: #ffffff;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem; 
+    height: 710px;
+  }
+
+  .card:hover {
+    box-shadow: 1px 1px 9px rgba(119, 119, 119, 0.4);
+}
+.card .mb-3 {
+  font-size:3rem ;
+  color: white;
+}
+
+/************************************************************************************/
+
+.container {
+    border: 1px solid rgb(255, 255, 255);
+}
+.b-container-fluid {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.row {
+    border: 1px solid rgb(253, 253, 255);  
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+img .logo {
+    width: 25rem;
+    height: Auto;
+    box-shadow: none;
+}
+.bandeau {
+    max-width: 100%;
+    z-index: 1;
+}
+.apropos {
+ background-color: #e0e0e0;
+ padding: 42px;
+ color: rgb(0, 0, 0);
+ border-radius: 8px;
+ margin-bottom: 1rem;
+}
+img {
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/****************************  BUTTONS   *******************************/
+.btn {
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+}
+
+p {
+    padding: 0.8rem;
+}
+.site {
+    min-height: 100vh;
+    margin-bottom: -140px;
+}
+
+footer, .minSite {
+    height: 140px;
+    color: white;
+    text-align: center;
+}
+.mentionslegales:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/********************  Social Media Icons*******************/
+.bg-info {
+    align-items: center;
+}
+.fa {
+    font-size:36px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.bulle {
+  margin-left: 2rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-image:
+  radial-gradient(
+    circle at top left,
+    #ffffff,
+    #549eb1,
+    #0765a3,
+    #000b22
+  );
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.9s;
+}
+.bulle:hover {
+  box-shadow: 2px 6px 5px rgb(1, 1, 78);
+  display: inline-block;
+  margin: 0.5rem 0;
+  width: 165px;
+  height: 28px;
+  opacity: 0.0;
+  background-image:
+  radial-gradient(
+    circle at top right,
+    #ffffff,
+    #77c6da,
+    #49dff3,
+    #000b22
+  );
+}
+.superposition {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  padding-left: 33rem;
+  padding-top: 15rem;
+}
+.filt {
+  color: black;
+}
+option {
+  color: black;
+}
+.bandanim {
+  display: flex;
+}
