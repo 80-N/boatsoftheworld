@@ -25,6 +25,9 @@ const navbar = (props) => (
                         <NavLink to="/bateaux" exact className="nav-link">Embarcations</NavLink>
                     </li>
                     <li className="nav-item">
+                        <NavLink to="/bateaux" exact className="nav-link">Connexion</NavLink>
+                    </li>
+                    <li className="nav-item">
                         <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
                     </li>
                     

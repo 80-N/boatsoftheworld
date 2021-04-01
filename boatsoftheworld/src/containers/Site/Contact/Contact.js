@@ -5,7 +5,7 @@ import Formulaire from "./Formulaire/Formulaire";
 
 class Contact extends Component {
     componentDidMount = () => {
-        document.title = "Amarres & Matelots- Contact";
+        document.title = "Amarres & Matelots - Contact";
     }
 
     handleSendMail = (message) => {
