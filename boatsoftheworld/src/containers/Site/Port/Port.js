@@ -130,7 +130,7 @@ class Port extends Component {
                                     this.state.bateaux &&
                                     this.state.bateaux.map(bateau => {
                                         return (
-                                            <div className="col-12 col-md-6 col-xl-4" key={bateau.id}>
+                                            <div className="col-12 col-md-6 col-xl-3" key={bateau.id}>
                                                 <Bateau {...bateau} 
                                                 filtreType = {this.handleSelectionType}
                                                 filtreContinent = {this.handleSelectionContinent} />

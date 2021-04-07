@@ -109,7 +109,7 @@ body {
     transition: 0.3s;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem; 
-    height: 510px;
+    height: 350px;
   }
 
   .card:hover {
@@ -147,13 +147,13 @@ img .logo {
 }
 .apropos {
  background-color: #e0e0e0;
- padding: 42px;
+ padding: 32px;
  color: rgb(0, 0, 0);
  border-radius: 8px;
  margin-bottom: 1rem;
 }
 img {
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -209,6 +209,7 @@ footer, .minSite {
   opacity: 0.5;
   transition: 0.9s;
 }
+
 .bulle:hover {
   box-shadow: 2px 6px 5px rgb(1, 1, 78);
   display: inline-block;

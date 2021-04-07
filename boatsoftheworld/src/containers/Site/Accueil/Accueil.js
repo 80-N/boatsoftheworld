@@ -26,21 +26,19 @@ class Accueil extends Component {
                     <div className="bulle"><a href="/" alt="accroche">...</a></div>
                     <div className="bulle"><a href="/" alt="accroche">...</a></div>
                 </div>
-                <img src={bandeau} alt="bandeau" className="bandeau" />
+
+                <img src={bandeau} alt="bandeau" className="img-fluid" />
                 </div>
                 <TitreH3><i>Au fil de l'eau ...</i></TitreH3>
                 <div className="bandanim">
                 </div>
-                    <div className="apropos">Moby Dick, Titanic, Queen Mary, L'Hermione, Ma Princesse. On les baptise en leur 
+                    <div className="apropos">Moby Dick, Titanic, Queen Mary, L'Hermione, Princess ... On les baptise en leur 
                     donnant des noms évocateurs et pleins de tendresse, d'attention. Comme s'ils pouvaient rire ou pleurer
                     avec nous en refaisant le tour de la Terre, le film de notre vie ... <br/>
-                        Eux, ce sont les bateaux, les elitmbarcations mythiques dont nous avons toujours entendu parler ou
-                        le petit objet flottant qui emmène voguer avec lui sur l'étang du bourg. Chaque embarcation a sa vie,
-                        sa naissance, son histoire, ses traditions (eh oui !), et sa mort aussi. <br/>
-                        Ils habitent des continents différents, dans des pays lointains ou juste dans le département d'à côté. <br/>
-                        Certains sont colorés, aux formes improbables, fabriqués avec tout et rien, fragiles et insolites. <br/>
-                        D'autres sont insolents de majesté et de puissance. Tous sont beaux. Ce sont tous, à nos yeux, les plus beaux !
-                        Matelots, larguez les amarres et vogue la galère, pour un tour des horizons !
+                        Eux, ce sont les bateaux, les embarcations, banales ou mythiques, dont nous avons toujours entendu parler ou
+                        le petit objet flottant qui nous emmène voguer avec lui sur l'étang du bourg. Chaque embarcation a sa vie,
+                        sa naissance, son histoire, ses traditions (eh oui !). <br/>
+                        Ohé Matelots, larguez les amarres !
                     </div>
                 <div className="container">
                     <div className="row">
