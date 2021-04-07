@@ -101,7 +101,7 @@ body {
     }
   }
   
-  /*********************** Style the cards *****************************/
+  /*********************** cards *****************************/
   .card {
     box-shadow: 0 2px 2px 0 rgba(119, 119, 119, 0.2);
     text-align: center;
@@ -109,7 +109,7 @@ body {
     transition: 0.3s;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem; 
-    height: 350px;
+    height: auto;
   }
 
   .card:hover {
@@ -146,7 +146,7 @@ img .logo {
     z-index: 1;
 }
 .apropos {
- background-color: #e0e0e0;
+ background-color: #e1e1e4;
  padding: 32px;
  color: rgb(0, 0, 0);
  border-radius: 8px;

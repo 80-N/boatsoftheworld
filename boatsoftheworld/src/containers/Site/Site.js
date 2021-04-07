@@ -9,8 +9,7 @@ import Contact from "./Contact/Contact";
 
 class Site extends Component {
     render() {
-        return (
-            // code ici
+        return (//Add "exact" before render to make sure we'll get only the required page.
             <>
               <div className="site">
                     <NavBar />
