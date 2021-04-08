@@ -7,8 +7,8 @@ const navbar = (props) => (//CERULEAN Bootswatch theme is used for this site.
                             //Add "exact" before className inside the NavLink tag to make sure we'll highlight only the selected nav button.
     <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div><a className="navbar-brand" href="/">
-                        <img src={logo} alt="logo de Amarres et Matelots" width='60%' className="img-fluid"/></a>
+                    <div><a className="navbar-brand" href="/">
+                        <img src={logo} alt="logo de Amarres et Matelots" width='50%' className="img-fluid"/></a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" 
                         data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" 
                         aria-label="Toggle navigation">
