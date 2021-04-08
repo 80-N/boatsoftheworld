@@ -16,7 +16,7 @@ class Site extends Component {
                     <Switch>
                         <Route path="/" exact render={() => <Accueil />} />
                         <Route path="/bateaux" exact render={() => <Port />} />
-                        <Route path="/contact" exact render={() => <h1>Page de contact</h1>} />
+                        <Route path="/contact" exact render={() => <Contact />} />
                         <Route render={() => <Error type="404">Cette page n'existe pas :(</Error>} />
                     </Switch>
                     <div className="minSite"></div>

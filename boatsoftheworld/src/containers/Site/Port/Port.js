@@ -5,6 +5,9 @@ import Bateau from "./Bateau/Bateau";
 import Button from "../../../components/UI/Button/Button";
 
 class Port extends Component {
+    componentDidMount = () => {
+        document.title = "Amarres & Matelots - Bateaux";
+    }
     state = {
         bateaux : null,
         typeFilter : null,

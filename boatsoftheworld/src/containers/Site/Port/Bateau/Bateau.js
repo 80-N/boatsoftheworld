@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../../..//components/UI/Button/Button";
 
+
 const boat = (props) => (
     <>
         <div className="card mb-3">
