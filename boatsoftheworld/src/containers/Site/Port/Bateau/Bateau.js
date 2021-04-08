@@ -14,7 +14,7 @@ const boat = (props) => (
                 <p className="card-text">{props.description}</p>
             </div>
             <hr/>
-            <h6>Embarcation de type <Button typeBtn="btn-info">{props.familly.famillyWording.toUpperCase()}</Button></h6>
+            <h6>Famille des <Button typeBtn="btn-info" clic = {() => props.typeFilter(props.familly.famillyId)}>{props.familly.famillyWording.toUpperCase()}</Button></h6>
             <div>{props.familly.famillyDescription}</div>
             <hr/>
             <h6> 
@@ -34,7 +34,13 @@ const boat = (props) => (
                         break;
                         default : colorBtn="btn-secondary"
                     }
-                    return <Button typeBtn={colorBtn} css="m-1" key={continent.continentId}>{continent.continentWording}</Button>
+                    return <Button 
+                                typeBtn={colorBtn} 
+                                css="m-1" 
+                                clic = {() => props.continentFilter(continent.continentId)}
+                                key={continent.continentId}
+                                >{continent.continentWording}
+                            </Button>
                 })
             }
             </h6>
