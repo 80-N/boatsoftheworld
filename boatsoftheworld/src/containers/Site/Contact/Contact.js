@@ -25,10 +25,13 @@ class Contact extends Component {
                 <div className="container">
                     <h6>Adresse : </h6>
                     Rennes (35) - FRANCE
-                    <h6> Téléphone : </h6>
+                    <h6>Téléphone : </h6>
                     01 02 03 04 05 
-                    <h6> Préférez-vous nous écrire ?</h6>
-                    <Formulaire sendMail = {this.handleSendMail}/> 
+                <hr/>
+                    <div className="container-fluid">
+                        <h6>Préférez-vous nous écrire ?</h6>
+                        <Formulaire sendMail = {this.handleSendMail}/>
+                    </div>
                 </div>
             </>
         );
