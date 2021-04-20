@@ -4,6 +4,9 @@ import axios from "axios";
 import Bateau from "./Bateau/Bateau";
 import Button from "../../../components/UI/Button/Button";
 
+//const hostname = "http://localhost/BOATSSERVER/";
+const hostname = "https://www.amarresetmatelots.fr/BOATSSERVER/";
+
 class Port extends Component {
     componentDidMount = () => {
         document.title = "Amarres & Matelots - Bateaux";
@@ -20,7 +23,7 @@ class Port extends Component {
     loadData = () => {
         const familly = this.state.typeFilter ? this.state.typeFilter : "-1";
         const continent = this.state.continentFilter ? this.state.continentFilter : "-1";
-        axios.get(`http://localhost/BOATSSERVER/front/bateaux/${familly}/${continent}`)
+        axios.get(`${hostname}front/bateaux/${familly}/${continent}`)
          .then(response => {
              this.setState({boats:Object.values(response.data)});
          })
@@ -28,11 +31,11 @@ class Port extends Component {
         //Filtering datas on families and continents
     componentDidMount = () => {
        this.loadData();
-       axios.get(`http://localhost/BOATSSERVER/front/familles`)
+       axios.get(`${hostname}front/familles`)
          .then(response => {
              this.setState({familiesList:Object.values(response.data)});
          })
-         axios.get(`http://localhost/BOATSSERVER/front/continents`)
+         axios.get(`${hostname}front/continents`)
          .then(response => {
              this.setState({continentsList:Object.values(response.data)});
          })
