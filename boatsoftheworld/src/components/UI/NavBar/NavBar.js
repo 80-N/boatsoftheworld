@@ -26,9 +26,6 @@ const navbar = (props) => (//CERULEAN Bootswatch theme is used for this site.
                         <NavLink to="/bateaux" exact className="nav-link">Bateaux</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/connexion" exact className="nav-link">Connexion</NavLink>
-                    </li>
-                    <li className="nav-item">
                         <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
                     </li>
                     

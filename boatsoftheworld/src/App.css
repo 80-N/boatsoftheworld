@@ -247,3 +247,116 @@ option {
 .bandanim {
   display: flex;
 }
+
+.bandeauMer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bateaupapier {
+  display: block;
+  width: 180px;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  margin-left: -510px;
+  margin-top: 44px;
+  animation: backandforth 60s linear infinite;
+}
+
+@keyframes backandforth {
+  0% {
+    transform: translateX(-64em);
+  }
+  50% {
+    transform: translateX(64em);
+  }
+  100% {
+    transform: translateX(-64em);
+  }
+}
+
+.cadran {
+  display: block;
+  width: 400px;
+  height: auto;
+  z-index: 3;
+  position: absolute;
+  margin-left: -1110px;
+  margin-bottom: 30px;
+  opacity: 0.2;
+  animation: rotation2 70s linear infinite;
+  }
+
+  @keyframes rotation2 {
+    0% {
+      transform: rotate(-360deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+.cadran2 {
+  display: block;
+  width: 240px;
+  height: auto;
+  z-index: 3;
+  position: absolute;
+  margin-left: -1040px;
+  margin-top: 70px;
+  opacity: 0.4;
+  animation: rotation2 70s linear infinite;
+  }
+
+  @keyframes rotation2 {
+    0% {
+      transform: rotate(-360deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+.boussole {
+  display: block;
+  width: 400px;
+  height: auto;
+  z-index: 3;
+  align-items: center;
+  position: absolute;
+  margin-left: -1110px;
+  margin-bottom: 30px;
+  animation: rotation 3s linear infinite;
+  opacity: 0.4;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+
+  .waves {
+    display: block;
+  width: 880px;
+  height: auto;
+  margin-top: 155px;
+  margin-left: -880px;
+  z-index: 2;
+  position: absolute;
+
+  }
+  

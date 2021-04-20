@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import TitreH3 from "../../../components/UI/Titres/TitreH3";
 import bandeau from "../../../assets/images/bandeau.png";
-import boutre from "../../../assets/images/Boutre.png";
-import pirogue from "../../../assets/images/pirogue-indonesie.png";
+import mer from "../../../assets/images/mer.png";
+import bateaupapier from "../../../assets/images/bateaupapier.png";
+import waves from "../../../assets/images/waves.png";
+import boussole from "../../../assets/images/boussole.png";
+import cadran from "../../../assets/images/cadran.png";
 
 class Accueil extends Component {
     componentDidMount = () => {
@@ -11,58 +14,35 @@ class Accueil extends Component {
     render() {
         return (
             <div>
-            <div className="tocover">
-            
-                <div className="superposition">
-                    <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                    <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                    <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                    <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                    <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                <div className="tocover">
+                
+                    <div className="superposition">
+                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                    </div>
+
+                    <img src={bandeau} alt="bandeau" className="img-fluid" />
+                </div>
+                    <TitreH3><i>Au fil de l'eau ...</i></TitreH3>
+                <div className="bandanim"></div>
+                <div className="apropos">Moby Dick, Titanic, Queen Mary, L'Hermione, Princess ... On les baptise en leur 
+                    donnant des noms évocateurs et pleins de tendresse, d'attention, comme s'ils pouvaient rire et pleurer
+                    avec nous, en refaisant le tour de la Terre, en revoyant le film de notre vie ... <br/>
+                    Chaque embarcation a sa naissance, sa propre vie, son histoire, ses traditions (eh oui !), et sa fin. <br/>
+                    Fluctuat, nec mergitur.<br/>
+                    - Ohé Matelots, larguez les amarres !
                 </div>
 
-                <img src={bandeau} alt="bandeau" className="img-fluid" />
-            </div>
-                <TitreH3><i>Au fil de l'eau ...</i></TitreH3>
-                <div className="bandanim">
-                </div>
-                    <div className="apropos">Moby Dick, Titanic, Queen Mary, L'Hermione, Princess ... On les baptise en leur 
-                    donnant des noms évocateurs et pleins de tendresse, d'attention. Comme s'ils pouvaient rire ou pleurer
-                    avec nous en refaisant le tour de la Terre, le film de notre vie ... <br/>
-                        Eux, ce sont les bateaux, les embarcations, banales ou mythiques, dont nous avons toujours entendu parler ou
-                        le petit objet flottant qui nous emmène voguer avec lui sur l'étang du bourg. Chaque embarcation a sa vie,
-                        sa naissance, son histoire, ses traditions (eh oui !). <br/>
-                        Ohé Matelots, larguez les amarres !
-                    </div>
-                    <div className="container">
-                    <div className="row">
-                        <div className="column">
-                            <div className="card">
-                                <img src={boutre} width='400rem' alt="Boutre" className="img-fluid" />
-                                <p>Lorem ipsum dolor sit amet ccoonsectetur adipisicing elit.
-                                    Doloribus praesentium saepe accusamus neque tenetur,
-                                    quae eos aut magnam eum, labore quas nesciunt.
-                                    
-                                </p>
-                            </div>
-                        </div>
-                        <div className="column">
-                            <div className="card">
-                                <img src={pirogue} width='400rem' alt="balsa" className="img-fluid" />
-                                <p>Lorem ipsum dolor sit amet ccoonsectetur adipisicing elit.
-                                    Doloribus praesentium saepe accusamus neque tenetur,
-                                    quae eos aut magnam eum, labore quas nesciunt.
-                                   
-                                </p>
-                                <p>Lorem ipsum dolor sit amet ccoonsectetur adipisicing elit.
-                                    Doloribus praesentium saepe accusamus neque tenetur,
-                                    quae eos aut magnam eum, labore quas nesciunt.
-                                   
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div className="bandeauMer">
+                    <img src={mer} alt="bandeau" className="img-fluid" />
+                    <div><img src={bateaupapier} alt="bateau en papier journal" className="bateaupapier" /></div>
+                    <div><img src={boussole} alt="boussole" className="boussole" /></div>
+                    <div><img src={cadran} alt="cadran" className="cadran" /></div>
+                    <div><img src={cadran} alt="cadran" className="cadran2" /></div>
+                    <div><img src={waves} alt="bateau en papier journal" className="waves" /></div>
                 </div>
             </div>
         );
