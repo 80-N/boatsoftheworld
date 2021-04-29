@@ -8,15 +8,16 @@ import Button from "../../../components/UI/Button/Button";
 const hostname = "https://www.amarresetmatelots.fr/BOATSSERVER/";
 
 class Port extends Component {
-    componentDidMount = () => {
-        document.title = "Amarres & Matelots - Bateaux";
-    }
     state = {
         bateaux : null,
         typeFilter : null,
         continentFilter : null,
         familiesList : null,
         continentsList : null
+    }
+
+    componentDidMount = () => {
+        document.title = "Amarres & Matelots - Bateaux";
     }
 
         //Loading and filtering datas on families and continents
@@ -30,7 +31,7 @@ class Port extends Component {
     }
         //Filtering datas on families and continents
     componentDidMount = () => {
-       this.loadData();
+       this.loadData(-1,-1); //To load boats datas
        axios.get(`${hostname}front/familles`)
          .then(response => {
              this.setState({familiesList:Object.values(response.data)});

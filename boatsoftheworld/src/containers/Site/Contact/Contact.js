@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import TitreH3 from "../../../components/UI/Titres/TitreH3";
-import Formulaire from "./Formulaire/Formulaire";
+import island from "../../../assets/images/island.png";
+import buoy from "../../../assets/images/buoy.png";
+import bluewaves from "../../../assets/images/bluewaves.png";
 
 class Contact extends Component {
     componentDidMount = () => {
@@ -30,9 +32,15 @@ class Contact extends Component {
                 <hr/>
                     <div className="container-fluid">
                         <h6>Préférez-vous nous écrire ?</h6>
-                        <Formulaire sendMail = {this.handleSendMail}/>
+                        <h5>etienndour@gmail.com</h5>
                     </div>
+                
+                <div className="bandeauMer">
+                   <img src={island} alt="bandeau" className="img-fluid" />
+                    <div><img src={buoy} alt="bouée" className="buoy" /></div>
+                    <div><img src={bluewaves} alt="vagues" className="bluewaves" /></div>
                 </div>
+                </div>   
             </>
         );
     }
