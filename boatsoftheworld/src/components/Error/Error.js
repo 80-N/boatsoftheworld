@@ -8,11 +8,11 @@ const error = (props) => (
    <div className="tocover">
    
        <div className="superposition">
-           <div className="bulle"><a href="/" alt="accroche">...</a></div>
-           <div className="bulle"><a href="/" alt="accroche">...</a></div>
-           <div className="bulle"><a href="/" alt="accroche">...</a></div>
-           <div className="bulle"><a href="/" alt="accroche">...</a></div>
-           <div className="bulle"><a href="/" alt="accroche">...</a></div>
+           <div className="bulle"></div>
+           <div className="bulle"></div>
+           <div className="bulle"></div>
+           <div className="bulle"></div>
+           <div className="bulle"></div>
        </div>
        <img src={bandeau} alt="bandeau" className="img-fluid" />
        </div>

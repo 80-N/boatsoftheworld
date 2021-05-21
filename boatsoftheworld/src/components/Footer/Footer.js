@@ -15,7 +15,11 @@ const footer = (props) => (
                         <a href="https://www.linkedin.com/in/etiennendour-80n/">
                             <i className="fa fa-linkedin-square"></i>
                         </a>
-                        <NavLink className="mentionslegales" to="/mentionslegales">Mentions Légales</NavLink>
+                    <div className='legalMentions'>
+                        <NavLink to="/mentionsLegales" exact className="nav-link">Mentions Légales</NavLink>
+                        <NavLink to="/plandusite" exact className="nav-link">Plan du site</NavLink>
+                    </div>
+                        
                 </div>
             </div>
         </footer>

@@ -17,11 +17,11 @@ class Accueil extends Component {
                 <div className="tocover">
                 
                     <div className="superposition">
-                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
-                        <div className="bulle"><a href="/" alt="accroche">...</a></div>
+                        <div className="bulle"></div>
+                        <div className="bulle"></div>
+                        <div className="bulle"></div>
+                        <div className="bulle"></div>
+                        <div className="bulle"></div>
                     </div>
 
                     <img src={bandeau} alt="bandeau" className="img-fluid" />
@@ -29,10 +29,9 @@ class Accueil extends Component {
                     <TitreH3><i>Au fil de l'eau ...</i></TitreH3>
                 <div className="bandanim"></div>
                 <div className="apropos">Moby Dick, Titanic, Queen Mary, L'Hermione, Princess ... On les baptise en leur 
-                    donnant des noms évocateurs et pleins de tendresse, d'attention, comme s'ils pouvaient rire et pleurer
-                    avec nous, en refaisant le tour de la Terre, en revoyant le film de notre vie ... <br/>
-                    Chaque embarcation a sa naissance, sa propre vie, son histoire, ses traditions (eh oui !), et sa fin. <br/>
-                    Fluctuat, nec mergitur.<br/>
+                    donnant des noms évocateurs et pleins de tendresse.<br/>
+                    Outil de travail ou objet de plaisir, ils bravent les flots, par tous temps.
+                    "Fluctuat, nec mergitur" (<em>Il est battu par les flots, mais ne sombre pas</em>).<br/>
                     - Ohé Matelots, larguez les amarres !
                 </div>
 

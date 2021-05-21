@@ -25,14 +25,12 @@ class Contact extends Component {
             <>
                 <TitreH3 bgColor="bg-primary">Contact</TitreH3>
                 <div className="container">
-                    <h6>Adresse : </h6>
-                    Rennes (35) - FRANCE
-                    <h6>Téléphone : </h6>
-                    01 02 03 04 05 
+                    <adress><h6>Adresse : </h6><h5>9, rue de Vern - Rennes(35). FRANCE</h5></adress>
+                    <h6>Téléphone : </h6><h5>06 80 87 61 80</h5>
                 <hr/>
                     <div className="container-fluid">
                         <h6>Préférez-vous nous écrire ?</h6>
-                        <h5>etienndour@gmail.com</h5>
+                        <a href="mailto:etienndour@gmail.com">etienndour@gmail.com</a>
                     </div>
                 
                 <div className="bandeauMer">

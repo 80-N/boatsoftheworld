@@ -6,6 +6,9 @@ import Port from "./Port/Port";
 import Error from "../../components/Error/Error";
 import Footer from "../../components/Footer/Footer";
 import Contact from "./Contact/Contact";
+import MentionsLegales from "./MentionsLegales/MentionsLegales";
+import PlanDusite from "./PlanDuSite/PlanDuSite";
+
 
 class Site extends Component {
     render() {
@@ -17,6 +20,8 @@ class Site extends Component {
                         <Route path="/" exact render={() => <Accueil />} />
                         <Route path="/bateaux" exact render={() => <Port />} />
                         <Route path="/contact" exact render={() => <Contact />} />
+                        <Route path="/mentionsLegales" exact render={() => <MentionsLegales />} />
+                        <Route path="/plandusite" exact render={() => <PlanDusite />} />
                         <Route render={() => <Error type="404">Cette page n'existe pas :(</Error>} />
                     </Switch>
                     <div className="minSite"></div>
